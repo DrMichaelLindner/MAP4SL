@@ -62,15 +62,15 @@ MAP4SL provided various output files
 
 
 ## *Example script:*
-cfg.seed = [31,85,22];
-cfg.sphere_radius = 6;
-cfg.disk = 'yes';
-cfg.corr_thresh = 0.6;
-cfg.saveprefix = 'TEST';
-cfg.flipLR = 'no';
-cfg.Shift_FOVdevX = 3;
-inputfilename = 'D:\BIDSfolder\s001\func\sub-01_task-X_bold.nii.gz';
-outputfolder='D:\MAP4SL_output';
+cfg.seed = [31,85,22];  
+cfg.sphere_radius = 6;  
+cfg.disk = 'yes';  
+cfg.corr_thresh = 0.6;  
+cfg.saveprefix = 'TEST';  
+cfg.flipLR = 'no';  
+cfg.Shift_FOVdevX = 3;  
+inputfilename = 'D:\BIDSfolder\s001\func\sub-01_task-X_bold.nii.gz';  
+outputfolder='D:\MAP4SL_output';  
 
 MAP4SL(cfg, inputfilename, outputfolder)
 
