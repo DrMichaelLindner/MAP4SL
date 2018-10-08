@@ -345,7 +345,7 @@ end
 
 sim = circshift(sim,-(realseed-1));
 x = circshift(x,-(realseed-1));
-
+x(x==0)=1;
 
 if strcmp(cfg.Grappa, 'yes')
     if ~isempty(find(x2==0, 1))
@@ -371,10 +371,17 @@ x3(f) = [];
 simc(f) = [];
 
 idx2redc = find(simc>sim(1));
-idx2redc = idx2redc([1,3]);
-LRc = LRc(idx2redc);
-x3 = x3(idx2redc);
-simc = simc(idx2redc);
+try
+    idx2redc = idx2redc([1,3]);
+    LRc = LRc(idx2redc);
+    x3 = x3(idx2redc);
+    simc = simc(idx2redc);
+catch
+    LRc = LRc(2:3);
+    x3 = x3(2:3);
+    simc = simc(2:3);
+end
+
 
 % save textfile with artefact positions
 sn = [cfg.saveprefix, '_label_position_link.txt'];
@@ -904,7 +911,7 @@ sn1=fullfile(outputfolder,sn);
 save_untouch_nii(nii,sn1);
 
 savename2 = [cfg.saveprefix,'_DATA_correlations.mat'];
-save(fullfile(outputfolder,savename2), 'CORR_rho', 'CORR_p', 'CORR_h','controlCORR_rho', 'controlCORR_p', 'controlCORR_h');
+save(fullfile(outputfolder,savename2), 'CORR_rho', 'CORR_p', 'controlCORR_rho', 'controlCORR_p');
 
 
 
