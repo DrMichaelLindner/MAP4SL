@@ -1,10 +1,10 @@
 function MAP4SL(cfg,filename,outputfolder)
 
-% MAP4SL - Mulitband Artefact Probe for Slice Leakage
+% MAP4SL - Multiband Artefact Probe for Slice Leakage
 % 
 % MAP4SL is a Matlab bases tool which is designed to identify the effect of
 % an artefact in MRI data on other areas depending on the slice leakage in 
-% multiband EPI functional images.
+% MR multiband EPI functional images.
 % 
 % This tool calculates the possible artefact positions of a given seed 
 % region depending on the multislice acceleration factor (and GRAPPA if 
