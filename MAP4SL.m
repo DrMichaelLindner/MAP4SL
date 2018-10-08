@@ -370,8 +370,8 @@ LRc(f) = [];
 x3(f) = [];
 simc(f) = [];
 
-idx2redc = find(simc>sim(1));
 try
+    idx2redc = find(simc>sim(1));
     idx2redc = idx2redc([1,3]);
     LRc = LRc(idx2redc);
     x3 = x3(idx2redc);
