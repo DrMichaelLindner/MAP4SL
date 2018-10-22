@@ -80,7 +80,7 @@ Matlab in the MATLAB path. The toolbox can be downloaded from here:
 https://uk.mathworks.com/matlabcentral/fileexchange/8797-tools-for-nifti-and-analyze-image
 
 
-## *Licence* 
+## *License* 
 MAP4SL by Michael Lindner is licensed under CC BY 4.0
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
   
