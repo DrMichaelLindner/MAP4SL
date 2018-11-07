@@ -140,7 +140,7 @@ if nargin<1
     cfg.seed = str2num(answer{1}); %#ok<*ST2NM>
     cfg.sphere_radius = str2num(answer{2});
     cfg.disk =  answer{3};
-    cfg.abs_corr = str2num(answer{4});
+    cfg.corr_thresh = str2num(answer{4});
     cfg.saveprefix = answer{5};
     cfg.flipLR = answer{6};
     cfg.Shift_FOVdevX = str2num(answer{7});
